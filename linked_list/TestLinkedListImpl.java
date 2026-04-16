@@ -15,6 +15,8 @@ class TestLinkedListImpl {
         list.deleteAtEnd();
         //find middle value
         System.out.printf("The middle value is %d\n", list.findMiddleValue());
+        //reverse list
+        list.reverse();
 
         list.print();
 

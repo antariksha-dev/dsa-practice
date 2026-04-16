@@ -78,7 +78,20 @@ class LinkedListImpl {
         return slow.num;
     }
 
-    // public static Node reverse() {
-        
-    // }
+    public Node reverse() {
+        reverse(head);
+    }
+
+    public Node reverse(Node head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        ListNode newHead = reverse(head.next);
+
+        head.next.next = head; 
+        head.next = null;      
+
+        return newHead;
+    }
 }

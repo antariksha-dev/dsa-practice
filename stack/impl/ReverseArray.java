@@ -1,0 +1,20 @@
+import java.util.*;
+
+class ReverseArray {
+    public static void main(String []args) {
+        int arr[] = {1,2,3,4};
+        reverseArray(arr);
+        System.out.println(Arrays.toString(arr));
+    }
+
+    public static void reverseArray(int[] arr) {
+        Stack<Integer> stack = new Stack<>();
+        for(int n: arr) {
+            stack.push(n);
+        }
+        int i=0;
+        while(!stack.isEmpty()) {
+            arr[i++] = stack.pop();
+        }
+    }  
+}

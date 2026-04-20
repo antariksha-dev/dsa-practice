@@ -9,3 +9,5 @@
 
 # Mac/Windows junk
 .DS_Store
+
+*.txt
